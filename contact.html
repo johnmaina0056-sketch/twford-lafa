@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | International Twyford Keda Ceramics</title>
+    <meta name="description" content="Get in touch with International Twyford Keda Ceramics for product enquiries, quotations, and WhatsApp orders." />
+    <style>
+         :root {
+            --primary: #b71c1c;
+            --primary-dark: #000000;
+            --secondary: #e53935;
+            --light: #fafafa;
+            --dark: #111111;
+            --gray: #666666;
+            --white: #ffffff;
+            --border: #dcdcdc;
+            --shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .container {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
+        
+        .topbar {
+            background: var(--primary-dark);
+            color: var(--white);
+            font-size: 0.9rem;
+            padding: 8px 0;
+        }
+        
+        .topbar-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--primary-dark);
+            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.18);
+        }
+        
+        .navbar {
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            color: var(--secondary);
+            font-size: 0.68rem;
+            margin-top: 3px;
+            letter-spacing: 0.8px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+            font-weight: 600;
+            color: var(--white);
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .menu-btn {
+            display: none;
+            border: 0;
+            background: transparent;
+            font-size: 1.7rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        .page-hero {
+            padding: 60px 0 24px;
+        }
+        
+        .page-hero h1 {
+            color: var(--primary);
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            margin-bottom: 10px;
+        }
+        
+        .page-hero p {
+            color: var(--gray);
+            max-width: 700px;
+        }
+        
+        .contact-section {
+            padding: 20px 0 80px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+        }
+        
+        .map-section {
+            margin-top: 28px;
+        }
+        
+        .map-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 14px;
+        }
+        
+        .map-heading h2 {
+            color: var(--primary);
+        }
+        
+        .map-heading .btn {
+            display: inline-block;
+            white-space: nowrap;
+        }
+        
+        .location-map {
+            display: block;
+            width: 100%;
+            height: clamp(280px, 38vw, 420px);
+            border: 0;
+            border-radius: 8px;
+        }
+        
+        .card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+        }
+        
+        .card h2,
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 14px;
+        }
+        
+        .contact-details {
+            display: grid;
+            gap: 16px;
+        }
+        
+        .contact-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: rgba(235, 110, 75, 0.18);
+            color: #b44d2f;
+            flex-shrink: 0;
+        }
+        
+        .form-group {
+            margin-bottom: 12px;
+        }
+        
+        .form-group label {
+            display: block;
+            color: #3c4a43;
+            font-size: 0.87rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            border: 1px solid #d5ddd7;
+            border-radius: 6px;
+            padding: 10px 12px;
+            font: inherit;
+        }
+        
+        .btn {
+            border: 0;
+            border-radius: 6px;
+            padding: 12px 16px;
+            background: var(--secondary);
+            color: var(--white);
+            font-weight: 700;
+            cursor: pointer;
+        }
+        
+        footer {
+            background: #0f243d;
+            color: #d8e2ee;
+            padding: 24px 0;
+            font-size: 0.9rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 17px;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .floating-whatsapp {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 55px;
+            height: 55px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: var(--secondary);
+            color: var(--white);
+            font-size: 1.7rem;
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.22);
+        }
+        
+        @media (max-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 760px) {
+            .menu-btn {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 76px;
+                left: 0;
+                right: 0;
+                padding: 20px 5%;
+                flex-direction: column;
+                align-items: flex-start;
+                background: var(--white);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .page-hero {
+                padding: 40px 0 20px;
+            }
+            .page-hero h1 {
+                font-size: 2.2rem;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .map-heading {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            .card {
+                padding: 18px;
+            }
+            .footer-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .floating-whatsapp {
+                right: 16px;
+                bottom: 16px;
+                width: 48px;
+                height: 48px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container topbar-content">
+            <span>Quality building finishes at competitive prices</span>
+            <span>Call us: <strong>0753 787 273</strong></span>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><img src="Twyford tiles.webp" alt="Refined Living logo" /></span>
+                <span>International Twyford <small>KEDA CERAMICS</small></span>
+            </a>
+            <button class="menu-btn" aria-label="Open navigation menu" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+                <li><a href="images.html" onclick="closeMenu()">Images</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contact us</h1>
+                <p>Reach out for product enquiries, quotations, and support. You can also place an order directly through WhatsApp.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container contact-grid">
+                <div class="card">
+                    <h2>Get in touch</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">☎</div>
+                            <div><strong>Phone</strong><br /><a href="tel:0753787273">0753 787 273</a></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">⌖</div>
+                            <div><strong>Location</strong><br />Opposite Umma University, Isinya, Kajiado County</div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">➤</div>
+                            <div><strong>Directions</strong><br />Along Namanga Road</div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">◷</div>
+                            <div><strong>Business hours</strong><br />Call ahead to confirm opening hours</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Send an enquiry on WhatsApp</h3>
+                    <form onsubmit="sendWhatsApp(event)">
+                        <div class="form-group">
+                            <label for="name">Your name</label>
+                            <input id="name" type="text" placeholder="Enter your name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone number</label>
+                            <input id="phone" type="tel" placeholder="Enter your phone number" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Product category</label>
+                            <select id="interest">
+                                <option>Tiles</option>
+                                <option>Doors and smart locks</option>
+                                <option>Bathroom fittings</option>
+                                <option>Epoxy and finishes</option>
+                                <option>General enquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="size">Item size</label>
+                            <select id="size">
+                                <option value="">— Select size —</option>
+                                <option>200x200 mm</option>
+                                <option>300x300 mm</option>
+                                <option>400x400 mm</option>
+                                <option>600x600 mm</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" placeholder="Tell us what you need"></textarea>
+                        </div>
+                        <button class="btn" type="submit">Send enquiry</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container map-section">
+                <div class="map-heading">
+                    <h2>Find us</h2>
+                    <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Opposite%20Umma%20University%2C%20Isinya%2C%20Kajiado%20County" target="_blank" rel="noopener">Get directions</a>
+                </div>
+                <iframe class="location-map" src="https://maps.google.com/maps?q=Opposite%20Umma%20University%2C%20Isinya%2C%20Kajiado%20County&amp;z=15&amp;output=embed" title="Map to International Twyford Keda Ceramics in Isinya" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <span>© <span id="year"></span> International Twyford Keda Ceramics.</span>
+            <span>Email: <a href="mailto:Info@twyfordfactory.co.ke">Info@twyfordfactory.co.ke</a></span>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="images.html">Images</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/254753787273" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">◉</a>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            if (navLinks) {
+                navLinks.classList.toggle('open');
+            }
+        }
+
+        function closeMenu() {
+            const navLinks = document.getElementById('navLinks');
+            if (navLinks) {
+                navLinks.classList.remove('open');
+            }
+        }
+
+        function initSite() {
+            const yearEl = document.getElementById('year');
+            if (yearEl) {
+                yearEl.textContent = new Date().getFullYear();
+            }
+
+            const navLinks = document.getElementById('navLinks');
+            if (navLinks) {
+                document.querySelectorAll('.nav-links a').forEach((link) => {
+                    link.addEventListener('click', closeMenu);
+                });
+            }
+
+            const form = document.querySelector('form');
+            if (!form) {
+                return;
+            }
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const name = (document.getElementById('name') ? .value || '').trim();
+                const phone = (document.getElementById('phone') ? .value || '').trim();
+                const interest = document.getElementById('interest') ? .value || '';
+                const size = document.getElementById('size') ? .value || '';
+                const message = (document.getElementById('message') ? .value || '').trim();
+
+                if (!name || !phone) {
+                    alert('Please enter your name and phone number.');
+                    return;
+                }
+
+                const text = 'Hello International Twyford Keda Ceramics,%0A%0A' +
+                    'My name is ' + encodeURIComponent(name) + '.%0A' +
+                    'Phone: ' + encodeURIComponent(phone) + '%0A' +
+                    'I am interested in: ' + encodeURIComponent(interest) + '%0A' +
+                    'Size: ' + encodeURIComponent(size) + '%0A' +
+                    'Message: ' + encodeURIComponent(message);
+
+                window.open('https://wa.me/254753787273?text=' + text, '_blank', 'noopener,noreferrer');
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', initSite);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>International Twyford Keda Ceramics | Isinya, Kajiado</title>
+    <meta name="description" content="Shop quality Twyford tiles, bathroom fittings, doors, smart locks, taps and building materials at International Twyford Keda Ceramics in Isinya, Kajiado County." />
+    <style>
+         :root {
+            --primary: #b71c1c;
+            --primary-dark: #000000;
+            --secondary: #e53935;
+            --light: #fafafa;
+            --dark: #111111;
+            --gray: #666666;
+            --white: #ffffff;
+            --border: #dcdcdc;
+            --shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        img {
+            display: block;
+            max-width: 100%;
+        }
+        
+        .container {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
+        
+        .topbar {
+            background: var(--primary-dark);
+            color: var(--white);
+            font-size: 0.9rem;
+            padding: 8px 0;
+        }
+        
+        .topbar-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--primary-dark);
+            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.18);
+        }
+        
+        .navbar {
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            color: var(--secondary);
+            font-size: 0.68rem;
+            margin-top: 3px;
+            letter-spacing: 0.8px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+            font-weight: 600;
+            color: var(--white);
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .menu-btn {
+            display: none;
+            border: 0;
+            background: transparent;
+            font-size: 1.7rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        .hero {
+            position: relative;
+            min-height: 610px;
+            display: flex;
+            align-items: center;
+            background: radial-gradient(circle at top left, #b71c1c 0%, #000000 70%);
+            color: var(--white);
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.08));
+            z-index: 1;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            opacity: 0.85;
+        }
+        
+        .hero-track {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: scrollImages 30s linear infinite;
+            min-width: 200%;
+        }
+        
+        .hero-bg-item {
+            flex: 0 0 auto;
+            width: 320px;
+            height: 220px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+            background: #000;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        
+        .hero-bg-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        @keyframes scrollImages {
+            from {
+                transform: translateX(0) translateY(-50%);
+            }
+            to {
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 760px;
+            padding: 70px 0;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: rgba(235, 110, 75, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            color: #ffdbc0;
+            padding: 8px 14px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: clamp(2.3rem, 5vw, 4.2rem);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.08rem;
+            max-width: 650px;
+            color: #ecf5ef;
+            margin-bottom: 28px;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            border: 0;
+            border-radius: 6px;
+            padding: 13px 21px;
+            font-size: 0.96rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: #d32f2f;
+            color: var(--white);
+        }
+        
+        .btn-light {
+            background: #d32f2f;
+            color: var(--white);
+        }
+        
+        .section {
+            padding: 74px 0;
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .about-image {
+            min-height: 360px;
+            border-radius: 14px;
+            background: linear-gradient(rgba(18, 71, 52, 0.1), rgba(18, 71, 52, 0.1)), url("tile.webp") center/cover;
+            box-shadow: var(--shadow);
+        }
+        
+        .section-heading h2 {
+            color: var(--primary);
+            font-size: clamp(1.8rem, 3vw, 2.4rem);
+            margin-bottom: 10px;
+        }
+        
+        .section-heading p {
+            color: var(--gray);
+        }
+        
+        .feature-list {
+            list-style: none;
+            display: grid;
+            gap: 12px;
+            margin-top: 18px;
+        }
+        
+        .feature-list li {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+        
+        .feature-list span {
+            color: var(--secondary);
+            font-weight: 700;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 24px;
+        }
+        
+        .feature-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 24px;
+        }
+        
+        .product-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .product-card img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .product-card-content {
+            padding: 18px;
+            display: grid;
+            gap: 12px;
+        }
+        
+        .product-card h3 {
+            margin: 0;
+            font-size: 1.15rem;
+            color: var(--primary);
+        }
+        
+        .product-card p {
+            color: var(--gray);
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        .product-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-top: 8px;
+        }
+        
+        .product-price {
+            font-weight: 700;
+            color: var(--dark);
+        }
+        
+        .product-card a {
+            margin-top: 14px;
+        }
+        
+        .client-notifications {
+            position: fixed;
+            left: 18px;
+            bottom: 18px;
+            z-index: 1200;
+            width: min(280px, calc(100vw - 36px));
+            pointer-events: none;
+            display: grid;
+            gap: 12px;
+        }
+        
+        .client-notification {
+            background: rgba(17, 17, 17, 0.92);
+            color: #f8f3ed;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 14px 16px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.35s ease, transform 0.35s ease;
+            pointer-events: auto;
+        }
+        
+        .client-notification.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .client-notification p {
+            margin: 0;
+            line-height: 1.45;
+            font-size: 0.95rem;
+        }
+        
+        .client-notification .client-source {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.8rem;
+            opacity: 0.75;
+        }
+        
+        .products-section {
+            padding: 64px 0 80px;
+        }
+        
+        .products-section .section-heading h2 {
+            margin-bottom: 8px;
+        }
+        
+        .price-catalog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 16px;
+            margin: 24px 0 32px;
+        }
+        
+        .price-group {
+            padding: 20px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+        }
+        
+        .price-group h3 {
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+        
+        .price-group p {
+            margin-bottom: 12px;
+            color: var(--gray);
+        }
+        
+        .price-list {
+            display: grid;
+            gap: 8px;
+            list-style: none;
+        }
+        
+        .price-list li {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .price-list strong {
+            text-align: right;
+            white-space: nowrap;
+        }
+        
+        .filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+        
+        .filter-btn {
+            border: 1px solid #cbd4ce;
+            border-radius: 999px;
+            background: var(--white);
+            padding: 9px 16px;
+            font-weight: 600;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+        
+        .products-layout {
+            display: grid;
+            grid-template-columns: 1.7fr 0.95fr;
+            gap: 24px;
+            align-items: start;
+        }
+        
+        .products-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        
+        .category-section {
+            background: linear-gradient(180deg, #f8f3ed 0%, #efddd2 100%);
+            border: 1px solid #e3d2ca;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 6px 18px rgba(30, 45, 70, 0.06);
+        }
+        
+        .category-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .category-heading h2 {
+            color: var(--primary);
+            font-size: 1.15rem;
+        }
+        
+        .category-pill {
+            background: rgba(235, 110, 75, 0.16);
+            color: #9a3f27;
+            border-radius: 999px;
+            padding: 6px 10px;
+            font-size: 0.82rem;
+            font-weight: 700;
+        }
+        
+        .category-product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+        }
+        
+        .product-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(17, 38, 28, 0.12);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: center;
+            cursor: pointer;
+            display: block;
+            background: #f7f3ea;
+        }
+        
+        .gallery-btn {
+            border: 0;
+            background: transparent;
+            color: var(--secondary);
+            cursor: pointer;
+            font-weight: 700;
+            padding: 0;
+            text-align: left;
+        }
+        
+        .product-info {
+            padding: 16px;
+            display: grid;
+            gap: 8px;
+        }
+        
+        .category-label {
+            color: var(--secondary);
+            font-size: 0.76rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+        }
+        
+        .product-info h3 {
+            color: var(--primary);
+            font-size: 1rem;
+            line-height: 1.25;
+        }
+        
+        .price {
+            color: var(--dark);
+            font-weight: 800;
+            font-size: 1.03rem;
+        }
+        
+        .product-actions {
+            display: grid;
+            gap: 8px;
+        }
+        
+        .qty-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .qty-btn,
+        .add-to-cart-btn,
+        .remove-btn,
+        .checkout-btn {
+            border: 0;
+            border-radius: 6px;
+            cursor: pointer;
+            font: inherit;
+        }
+        
+        .qty-btn {
+            width: 34px;
+            height: 34px;
+            background: var(--primary);
+            color: var(--white);
+            font-size: 1.1rem;
+        }
+        
+        .qty-input {
+            width: 56px;
+            height: 34px;
+            text-align: center;
+            border: 1px solid #d4ddd6;
+            border-radius: 6px;
+            font-weight: 700;
+        }
+        
+        .add-to-cart-btn {
+            padding: 10px 12px;
+            background: var(--secondary);
+            color: var(--white);
+            font-weight: 700;
+        }
+        
+        .cart-panel {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 20px;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 100px;
+        }
+        
+        .cart-panel h3 {
+            color: var(--primary);
+            margin-bottom: 14px;
+        }
+        
+        .cart-items {
+            display: grid;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+        
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+            border: 1px solid #e9ece7;
+            border-radius: 10px;
+            padding: 10px;
+            background: #fcfcfa;
+        }
+        
+        .cart-item strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+        
+        .cart-item small {
+            color: var(--gray);
+        }
+        
+        .remove-btn {
+            background: transparent;
+            color: #b23b3b;
+            padding: 4px 6px;
+            font-weight: 700;
+        }
+        
+        .cart-total {
+            padding-top: 10px;
+            border-top: 1px solid #e9ece7;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+        
+        .checkout-form {
+            display: grid;
+            gap: 10px;
+        }
+        
+        .checkout-form input,
+        .checkout-form textarea {
+            width: 100%;
+            border: 1px solid #d5ddd7;
+            border-radius: 6px;
+            padding: 10px 12px;
+            font: inherit;
+        }
+        
+        .checkout-btn {
+            padding: 12px;
+            background: var(--primary);
+            color: var(--white);
+            font-weight: 700;
+        }
+        
+        .buy-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.72);
+            display: grid;
+            place-items: center;
+            padding: 18px;
+            z-index: 2500;
+        }
+        
+        .buy-modal.hidden {
+            display: none;
+        }
+        
+        .buy-modal-card {
+            width: min(520px, 100%);
+            background: var(--white);
+            border-radius: 14px;
+            padding: 22px;
+            box-shadow: var(--shadow);
+        }
+        
+        .buy-modal-card h3 {
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+        
+        .buy-modal-card p {
+            color: var(--gray);
+            margin-bottom: 14px;
+        }
+        
+        .buy-form {
+            display: grid;
+            gap: 12px;
+        }
+        
+        .buy-form label {
+            display: grid;
+            gap: 6px;
+            font-weight: 700;
+            color: var(--dark);
+        }
+        
+        .buy-form input,
+        .buy-form textarea,
+        .buy-form select,
+        .buy-form input {
+            width: 100%;
+            border: 1px solid #d8e0da;
+            border-radius: 8px;
+            padding: 10px 12px;
+            font: inherit;
+        }
+        
+        .buy-form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-top: 4px;
+        }
+        
+        .buy-form-actions button {
+            border: 0;
+            border-radius: 8px;
+            padding: 11px 14px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        
+        .buy-cancel {
+            background: #f0f0f0;
+            color: var(--dark);
+        }
+        
+        .buy-submit {
+            background: #d32f2f;
+            color: var(--white);
+        }
+        
+        .empty-cart {
+            color: var(--gray);
+            padding: 12px 0;
+        }
+        
+        .gallery-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 2200;
+            background: rgba(6, 31, 23, 0.88);
+            display: grid;
+            place-items: center;
+            padding: 18px;
+        }
+        
+        .gallery-panel {
+            width: min(960px, 100%);
+            max-height: 92vh;
+            overflow: auto;
+            background: var(--white);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: var(--shadow);
+        }
+        
+        .gallery-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        
+        .gallery-header h3 {
+            color: var(--primary);
+        }
+        
+        .gallery-close {
+            border: 0;
+            background: transparent;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        .gallery-main-image {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            background: #eef2ed;
+        }
+        
+        .gallery-thumbs {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 10px;
+        }
+        
+        .gallery-thumb {
+            border: 2px solid transparent;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            padding: 0;
+            background: transparent;
+        }
+        
+        .gallery-thumb.active {
+            border-color: var(--secondary);
+        }
+        
+        .gallery-thumb img {
+            width: 100%;
+            height: 92px;
+            object-fit: cover;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .feature-card h3 {
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+        
+        .feature-card p {
+            color: var(--gray);
+        }
+        
+        footer {
+            background: #0f243d;
+            color: #d8e2ee;
+            padding: 24px 0;
+            font-size: 0.9rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 17px;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .floating-whatsapp {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 55px;
+            height: 55px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: var(--secondary);
+            color: var(--white);
+            font-size: 1.7rem;
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.22);
+        }
+        
+        @media (max-width: 1024px) {
+            .hero-bg-item {
+                width: 260px;
+                height: 180px;
+            }
+            .about-grid,
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .products-layout {
+                grid-template-columns: 1fr;
+            }
+            .category-product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 760px) {
+            .menu-btn {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 76px;
+                left: 0;
+                right: 0;
+                padding: 20px 5%;
+                flex-direction: column;
+                align-items: flex-start;
+                background: var(--white);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .topbar {
+                font-size: 0.95rem;
+                padding: 10px 0;
+            }
+            .navbar {
+                min-height: 84px;
+            }
+            .hero {
+                min-height: auto;
+                padding: 48px 0;
+            }
+            .hero-bg {
+                display: block;
+                opacity: 0.95;
+            }
+            .hero::before {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.12));
+            }
+            .hero-content {
+                padding: 42px 0;
+            }
+            .tag {
+                font-size: 0.92rem;
+                padding: 10px 15px;
+                margin-bottom: 18px;
+            }
+            .hero h1 {
+                font-size: 2.7rem;
+                line-height: 1.08;
+            }
+            .hero p {
+                font-size: 1.08rem;
+                line-height: 1.7;
+                margin-bottom: 24px;
+            }
+            .buttons {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .btn {
+                width: 100%;
+                padding: 15px 20px;
+                font-size: 1rem;
+            }
+            .section {
+                padding: 60px 0;
+            }
+            .section-heading h2 {
+                font-size: 1.95rem;
+                line-height: 1.25;
+            }
+            .section-heading p {
+                font-size: 1rem;
+                line-height: 1.7;
+            }
+            .feature-card {
+                padding: 22px;
+            }
+            .feature-card h3 {
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+            }
+            .feature-card p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+            .product-info h3 {
+                font-size: 1.05rem;
+            }
+            .price {
+                font-size: 1.05rem;
+            }
+            .add-to-cart-btn,
+            .qty-btn,
+            .qty-input {
+                min-height: 42px;
+            }
+            .buy-form input,
+            .buy-form textarea,
+            .buy-form select {
+                min-height: 44px;
+                font-size: 1rem;
+                padding: 12px;
+            }
+            .about-grid,
+            .cards-grid,
+            .category-product-grid {
+                grid-template-columns: 1fr;
+            }
+            .floating-whatsapp {
+                right: 16px;
+                bottom: 16px;
+                width: 48px;
+                height: 48px;
+            }
+            .gallery-thumbs {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            .footer-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+            .footer-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container topbar-content">
+            <span>Quality building finishes at competitive prices</span>
+            <span>Call us: <strong>0753 787 273</strong></span>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><img src="Twyford tiles.webp" alt="Refined Living logo" /></span>
+                <span>International Twyford <small>KEDA CERAMICS</small></span>
+            </a>
+            <button class="menu-btn" aria-label="Open navigation menu" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+                <li><a href="images.html" onclick="closeMenu()">Images</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-track">
+                    <div class="hero-bg-item"><img src="Twyford tiles.webp" alt="Tile sample" /></div>
+                    <div class="hero-bg-item"><img src="tile.webp" alt="Tile sample" /></div>
+                    <div class="hero-bg-item"><img src="Twyford Granite Grey 60x120.webp" alt="Grey granite tile" /></div>
+                    <div class="hero-bg-item"><img src="showers.webp" alt="Shower fitting" /></div>
+                    <div class="hero-bg-item"><img src="smart door lock.webp" alt="Smart door lock" /></div>
+                    <div class="hero-bg-item"><img src="Twyford tiles.webp" alt="Tile sample" /></div>
+                    <div class="hero-bg-item"><img src="tile.webp" alt="Tile sample" /></div>
+                </div>
+            </div>
+            <div class="container hero-content">
+                <span class="tag">TILES • BATHROOMS • DOORS • FINISHES</span>
+                <h1># Refined Living<br />Redefined Tiles.</h1>
+                <p>Explore our extensive selection of ceramics, bathroom fittings, doors and finishing products. Browse the full catalog or contact us for a quotation.</p>
+                <div class="buttons">
+                    <a href="images.html" class="btn btn-primary">Collection</a>
+                    <a href="contact.html" class="btn btn-light">Direct inquiry</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container about-grid">
+                <div class="about-image" aria-label="Tile showroom"></div>
+                <div>
+                    <div class="section-heading">
+                        <h2>Your trusted ceramics and finishing partner</h2>
+                        <p>We supply quality products for homes, offices and commercial projects with friendly guidance and competitive pricing.</p>
+                    </div>
+                    <ul class="feature-list">
+                        <li><span>✓</span> Wide range of tiles and interior finishes.</li>
+                        <li><span>✓</span> Bathroom fittings, doors and smart locks.</li>
+                        <li><span>✓</span> Quick WhatsApp ordering and quotations.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>What you can find here</h2>
+                    <p>Visit the dedicated pages for the full catalog and direct contact details.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="feature-card">
+                        <h3>Gallery showcase</h3>
+                        <p>Browse our photo gallery of tiles, bathroom fittings, doors and finish samples.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>WhatsApp ordering</h3>
+                        <p>Send your order request directly to the team with the customer details and delivery notes.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Showroom contact</h3>
+                        <p>Get the phone number, location and directions for our Isinya showroom.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section products-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Featured products for sale</h2>
+                    <p>Choose your finishing materials and order directly through WhatsApp for fast delivery.</p>
+                </div>
+                <div class="price-catalog">
+                    <article class="price-group">
+                        <h3>Floor Tiles</h3>
+                        <ul class="price-list">
+                            <li><span>30×30 (17 pcs)</span><strong>KSh 1,050</strong></li>
+                            <li><span>40×40 (12 pcs)</span><strong>KSh 1,250</strong></li>
+                            <li><span>50×50 (7 pcs)</span><strong>KSh 1,550</strong></li>
+                            <li><span>60×60 (4 pcs)</span><strong>KSh 2,550</strong></li>
+                        </ul>
+                    </article>
+                    <article class="price-group">
+                        <h3>Wall Tiles</h3>
+                        <ul class="price-list">
+                            <li><span>20×30 (25 pcs)</span><strong>KSh 1,080</strong></li>
+                            <li><span>25×40 (15 pcs)</span><strong>KSh 1,150</strong></li>
+                            <li><span>30×60 (8 pcs)</span><strong>KSh 1,500</strong></li>
+                        </ul>
+                    </article>
+                    <article class="price-group">
+                        <h3>Epoxy Floor Coating</h3>
+                        <p>20 L covers 10×10 ft</p>
+                        <ul class="price-list">
+                            <li><span>Epoxy hardener</span><strong>KSh 1,800</strong></li>
+                            <li><span>Epoxy resin</span><strong>KSh 4,200</strong></li>
+                            <li><span>Installation per bucket</span><strong>KSh 1,000</strong></li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img src="tile.webp" alt="Classic white tile">
+                        <div class="product-card-content">
+                            <h3>Classic White Tile</h3>
+                            <p>Clean and bright tile finish suitable for modern kitchens, bathrooms and living spaces.</p>
+                            <div class="product-meta">
+                                <span class="product-price">Ksh 2,800 / m²</span>
+                            </div>
+                            <button class="btn btn-primary buy-now-btn" type="button" data-product="Classic White Tile" data-price="2800" data-sizes="200x200,300x300,400x400,600x600">Buy now</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="Twyford Granite Grey 60x120.webp" alt="Granite Grey 60x120 tile">
+                        <div class="product-card-content">
+                            <h3>Granite Grey 60x120</h3>
+                            <p>Durable large-format tile with a premium stone finish for modern spaces.</p>
+                            <div class="product-meta">
+                                <span class="product-price">Ksh 1,450 / m²</span>
+                            </div>
+                            <button class="btn btn-primary buy-now-btn" type="button" data-product="Granite Grey 60x120" data-price="1450" data-sizes="60x120">Buy now</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="Twyford tiles.webp" alt="Classic tile pack">
+                        <div class="product-card-content">
+                            <h3>Classic Tile Pack</h3>
+                            <p>Best-selling ceramic tile assortment for elegant floors and wall accents.</p>
+                            <div class="product-meta">
+                                <span class="product-price">Ksh 980 / m²</span>
+                            </div>
+                            <button class="btn btn-primary buy-now-btn" type="button" data-product="Classic Tile Pack" data-price="980" data-sizes="200x200,300x300,400x400">Buy now</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="epoxy hardener.jpeg" alt="Epoxy hardener">
+                        <div class="product-card-content">
+                            <h3>Epoxy Hardener</h3>
+                            <p>Reliable epoxy hardener for smooth finishing and durable surface applications.</p>
+                            <div class="product-meta">
+                                <span class="product-price">Ksh 1,800</span>
+                            </div>
+                            <button class="btn btn-primary buy-now-btn" type="button" data-product="Epoxy Hardener" data-price="1800" data-sizes="Unit">Buy now</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="primer 1.jpeg" alt="Primer 1">
+                        <div class="product-card-content">
+                            <h3>Primer 1</h3>
+                            <p>High-quality primer for surface preparation and improved adhesion.</p>
+                            <div class="product-meta">
+                                <span class="product-price">Ksh 1,000</span>
+                            </div>
+                            <button class="btn btn-primary buy-now-btn" type="button" data-product="Primer 1" data-price="1000" data-sizes="Unit">Buy now</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="primer.jpeg" alt="Primer">
+                        <div class="product-card-content">
+                            <h3>Primer</h3>
+                            <p>Versatile primer for strong base coverage and durable finishing results.</p>
+                            <div class="product-meta">
+                                <span class="product-price">Ksh 4,200</span>
+                            </div>
+                            <button class="btn btn-primary buy-now-btn" type="button" data-product="Primer" data-price="1000" data-sizes="Unit">Buy now</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <span>© <span id="year"></span> International Twyford Keda Ceramics.</span>
+            <span>Email: <a href="mailto:Info@twyfordfactory.co.ke">Info@twyfordfactory.co.ke</a></span>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="images.html">Images</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="client-notifications" aria-live="polite" aria-atomic="true">
+        <div class="client-notification" id="clientNotification">
+            <p id="clientMessage">Happy clients across the country are receiving their tiles today.</p>
+            <span class="client-source" id="clientSource">– Nairobi</span>
+        </div>
+    </div>
+
+    <div class="buy-modal hidden" id="buyModal" aria-hidden="true">
+        <div class="buy-modal-card">
+            <h3>Order request</h3>
+            <p>Fill in your order details and we will send it to WhatsApp.</p>
+            <form class="buy-form" id="buyForm">
+                <label>
+                    Product
+                    <input id="buyProductName" name="product" type="text" readonly required>
+                </label>
+                <label>
+                    Quantity needed
+                    <input id="buyQuantity" name="quantity" type="number" min="1" value="1" required>
+                </label>
+                <label>
+                    Size
+                    <select id="buySize" name="size">
+                        <option value="">— Select size —</option>
+                    </select>
+                </label>
+                <label>
+                    Safaricom number
+                    <input id="buyPhone" name="phone" type="tel" placeholder="0712 345 678" required>
+                </label>
+                <label>
+                    Location
+                    <input id="buyLocation" name="location" type="text" placeholder="Nairobi" required>
+                </label>
+                <label>
+                    Total price (Ksh)
+                    <input id="buyTotal" name="total" type="number" min="1" required>
+                </label>
+                <div class="buy-form-actions">
+                    <button class="buy-cancel" type="button" id="closeBuyModal">Cancel</button>
+                    <button class="buy-submit" type="submit">Send to WhatsApp</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <a class="floating-whatsapp" href="https://wa.me/254753787273" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">◉</a>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            if (navLinks) {
+                navLinks.classList.toggle('open');
+            }
+        }
+
+        function closeMenu() {
+            const navLinks = document.getElementById('navLinks');
+            if (navLinks) {
+                navLinks.classList.remove('open');
+            }
+        }
+
+        function initSite() {
+            const navLinks = document.getElementById('navLinks');
+            if (navLinks) {
+                document.querySelectorAll('.nav-links a').forEach((link) => {
+                    link.addEventListener('click', closeMenu);
+                });
+            }
+
+            const yearEl = document.getElementById('year');
+            if (yearEl) {
+                yearEl.textContent = new Date().getFullYear();
+            }
+
+            const clientMessages = [{
+                text: 'Tiles delivered to a happy homeowner in Kisumu — quality finish and fast service.',
+                source: 'Kisumu'
+            }, {
+                text: 'Order received and installed in a new kitchen project in Nakuru.',
+                source: 'Nakuru'
+            }, {
+                text: 'Clients in Eldoret loved the quick delivery and stone-look tiles.',
+                source: 'Eldoret'
+            }, {
+                text: 'Beautiful bathroom tiles delivered safely to a Nairobi customer.',
+                source: 'Nairobi'
+            }, {
+                text: 'Tiles delivered to a family home in Mombasa with excellent customer support.',
+                source: 'Mombasa'
+            }];
+
+            let currentClientIndex = 0;
+            const notification = document.getElementById('clientNotification');
+            const messageEl = document.getElementById('clientMessage');
+            const sourceEl = document.getElementById('clientSource');
+
+            function showClientMessage() {
+                if (!notification || !messageEl || !sourceEl) {
+                    return;
+                }
+                const current = clientMessages[currentClientIndex];
+                messageEl.textContent = current.text;
+                sourceEl.textContent = `– ${current.source}`;
+                notification.classList.add('visible');
+                setTimeout(() => notification.classList.remove('visible'), 4500);
+                currentClientIndex = (currentClientIndex + 1) % clientMessages.length;
+            }
+
+            showClientMessage();
+            setInterval(showClientMessage, 6500);
+
+            const buyModal = document.getElementById('buyModal');
+            const buyForm = document.getElementById('buyForm');
+            const buyProductName = document.getElementById('buyProductName');
+            const buyQuantity = document.getElementById('buyQuantity');
+            const buyPhone = document.getElementById('buyPhone');
+            const buyLocation = document.getElementById('buyLocation');
+            const buyTotal = document.getElementById('buyTotal');
+            const buySize = document.getElementById('buySize');
+            let currentProductPrice = 0;
+
+            if (!buyModal || !buyForm || !buyProductName || !buyQuantity || !buyPhone || !buyLocation || !buyTotal) {
+                return;
+            }
+
+            function openBuyModal(product, price, sizes) {
+                buyProductName.value = product;
+                currentProductPrice = Number(price);
+                buyQuantity.value = 1;
+                buyPhone.value = '';
+                buyLocation.value = '';
+                buyTotal.value = currentProductPrice;
+
+                // Populate sizes select
+                if (buySize) {
+                    buySize.innerHTML = '<option value="">— Select size —</option>';
+                    if (sizes) {
+                        sizes.split(',').map(s => s.trim()).forEach((s) => {
+                            const opt = document.createElement('option');
+                            opt.value = s;
+                            opt.textContent = s;
+                            buySize.appendChild(opt);
+                        });
+                    }
+                }
+
+                buyModal.classList.remove('hidden');
+                buyModal.setAttribute('aria-hidden', 'false');
+            }
+
+            function closeBuyModal() {
+                buyModal.classList.add('hidden');
+                buyModal.setAttribute('aria-hidden', 'true');
+                buyForm.reset();
+                buyTotal.value = '';
+            }
+
+            document.querySelectorAll('.buy-now-btn').forEach((button) => {
+                button.addEventListener('click', () => {
+                    openBuyModal(button.dataset.product, button.dataset.price, button.dataset.sizes || '');
+                });
+            });
+
+            const closeButton = document.getElementById('closeBuyModal');
+            if (closeButton) {
+                closeButton.addEventListener('click', closeBuyModal);
+            }
+
+            buyModal.addEventListener('click', (event) => {
+                if (event.target === buyModal) {
+                    closeBuyModal();
+                }
+            });
+
+            buyQuantity.addEventListener('input', () => {
+                const quantity = parseInt(buyQuantity.value, 10);
+                if (quantity > 0) {
+                    buyTotal.value = quantity * currentProductPrice;
+                }
+            });
+
+            buyForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+
+                const quantity = parseInt(buyQuantity.value, 10);
+                const phone = buyPhone.value.trim();
+                const location = buyLocation.value.trim();
+                const total = buyTotal.value.trim();
+                const sizeValue = buySize ? (buySize.value || '') : '';
+
+                if (!quantity || !phone || !location || !total) {
+                    alert('Please fill in quantity, Safaricom number, location and total price.');
+                    return;
+                }
+
+                const message = `Hello International Twyford Keda Ceramics,%0A%0AI would like to order:%0AProduct: ${encodeURIComponent(buyProductName.value)}%0AQuantity: ${quantity}%0ASize: ${encodeURIComponent(sizeValue)}%0ASafaricom number: ${encodeURIComponent(phone)}%0ALocation: ${encodeURIComponent(location)}%0ATotal price: ${encodeURIComponent(total)}%0A%0APlease confirm availability and delivery.`;
+                const whatsappUrl = `https://wa.me/254753787273?text=${message}`;
+                window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+                closeBuyModal();
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', initSite);
+    </script>
+</body>
+
+</html>
